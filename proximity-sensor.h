@@ -1,6 +1,6 @@
 #include <Arduino.h>                    // To add IntelliSense for platform constants.
 #include <Wire.h>                       // To read the gesture sensor via I2C.
-#include <APDS9930.h>                   // Third-party library with gesture sensor utilities.
+#include "src/APDS9930.h"                   // Third-party library with gesture sensor utilities.
 
 
 #ifndef proximity_sensor_h
