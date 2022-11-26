@@ -56,6 +56,9 @@ void initSensor() {
 
 void loop() {
   int switchState = digitalRead(PIN_SWITCH);
+  if (switchState == LOW) Serial.println("Switch is ON"); //We engange on LOW
+  if (switchState == HIGH) Serial.println("Switch is OFF");
+
   boolean isSwitchTurnedOn = (switchState != lastSwitchState) && (switchState == LOW);
 
   if (isSwitchTurnedOn) {
